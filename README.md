@@ -3,15 +3,10 @@ This project is an end-to-end UI Test Automation Framework built with Playwright
 
 📚 Tech Stack
 Java
-
 Playwright for Java
-
 TestNG (Test Runner)
-
 Extent Reports (Reporting)
-
 Maven (Build Tool)
-
 Git & GitHub (Version Control)
 
 🏗️ Project Structure
