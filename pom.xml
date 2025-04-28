@@ -18,6 +18,13 @@
     </properties>
 
     <dependencies>
+    <!-- Extent Reports dependency -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.9</version> <!-- You can use latest 5.x -->
+</dependency>
+
         <!-- Cucumber -->
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -37,13 +44,20 @@
             <version>${playwright.version}</version>
         </dependency>
 
-        <!-- TestNG -->
+   <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.7.0</version> <!-- Or any other compatible version -->
+    <scope>test</scope>
+</dependency>
+
         <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>${testng.version}</version>
-            <scope>test</scope>
-        </dependency>
+  <groupId>org.projectlombok</groupId>
+  <artifactId>lombok</artifactId>
+  <version>1.18.30</version> <!-- Use latest -->
+  <scope>provided</scope>
+</dependency>
+
     </dependencies>
 
     <build>

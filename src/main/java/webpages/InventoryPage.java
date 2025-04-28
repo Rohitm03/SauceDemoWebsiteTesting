@@ -38,7 +38,7 @@ public class InventoryPage {
     }
 
     public void selectSortByHighToLow() {
-        page.locator("[data-test=\"product-sort-container\"]").selectOption("hilo");
+        page.locator("[data-test=\"product-sort-container\"]").selectOption("lohi");
     }
 
     public boolean isPricesSortedHighToLow() {
