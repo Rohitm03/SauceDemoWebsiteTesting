@@ -1,91 +1,68 @@
-SauceDemoWebsiteTesting
-This project is an end-to-end UI Test Automation Framework built with Playwright + TestNG in Java for automating the SauceDemo website.
+# 🧪 SauceDemo Website Testing Automation
 
-📚 Tech Stack
-Java
-Playwright for Java
-TestNG (Test Runner)
-Extent Reports (Reporting)
-Maven (Build Tool)
-Git & GitHub (Version Control)
+Automated UI test suite for [SauceDemo](https://www.saucedemo.com/) using **Playwright + Java + TestNG**, designed with modular architecture and industry-standard practices.
 
-🏗️ Project Structure
-bash
-Copy
-Edit
-/src
-  /main
-    /java
-      /webpages      --> Page Object Model (POM) classes (LoginPage, InventoryPage, CartPage, CheckoutPage)
-  /test
-    /java
-      /tests         --> Test classes (loginTest.java)
-pom.xml             --> Maven project file
-testng.xml          --> TestNG suite file
-README.md
-⚙️ How to Set Up Locally
-Clone the repository:
+---
 
-bash
-Copy
-Edit
-git clone https://github.com/Rohitm03/SauceDemoWebsiteTesting.git
-cd SauceDemoWebsiteTesting
-Open the project in IntelliJ IDEA / Eclipse.
+## ✅ Scenarios Automated
 
-Install project dependencies:
+1. ✔️ Verify sorting order from **Z to A** on the "All Items" page.
+2. ✔️ Verify **price order (high to low)** on the "All Items" page.
+3. ✔️ Add multiple items to cart and **validate full checkout journey**.
 
-If you are using IntelliJ:
+---
 
-Maven -> Right click on pom.xml -> "Reload Project"
+## 🌟 Bonus Features
 
-Or via command line:
+- 📸 **Automated visual tests** with screenshot capture on failure.
+- 📄 **Extent Reports** for rich HTML test execution reports.
 
-bash
-Copy
-Edit
+---
+
+## 📂 Project Structure
+
+SAUCEDEMOWEBTESTING-MAIN/ │ ├── .idea/ # IDE config ├── .vscode/ # VSCode config ├── src/ │ ├── main/java/ │ │ ├── utilities/ │ │ │ ├── ExtentReportManager.java │ │ │ └── ScreenshotUtility.java │ │ └── webpages/ │ │ ├── CartPage.java │ │ ├── CheckoutPage.java │ │ ├── InventoryPage.java │ │ └── LoginPage.java │ └── test/java/ │ └── SauceDemoTest.java │ ├── target/ │ └── test-output/images/ # Screenshots on test failures │ ├── failure_*.png │ └── extent-report.html # HTML test report │ ├── pom.xml # Maven config and dependencies ├── testng.xml # Test suite configuration ├── README.md ├── .gitignore ├── .gitattributes
+
+
+
+---
+
+## 🛠️ Prerequisites
+
+- Java 17+
+- Maven 3.6+
+- Node.js (for Playwright CLI, optional)
+- Git
+
+---
+
+## 🚀 How to Run the Tests
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/saucedemowebsitetesting.git
+cd saucedemowebsitetesting
+
+# Install dependencies
 mvn clean install
-Run the tests:
 
-Via TestNG (Right click testng.xml -> Run)
-
-OR through Maven:
-
-bash
-Copy
-Edit
+# Run tests
 mvn test
-🧪 What Tests Are Covered?
-Login to SauceDemo Website
 
-Verify product sorting (Z to A)
 
-Verify price sorting (High to Low)
+🧾 Reports and Logs
+📄 HTML Report: target/extent-report.html
 
-Add selected products to cart
+📸 Failure Screenshots: target/test-output/images/*.png
 
-Complete checkout journey (First Name, Last Name, Postal Code)
+🎥 Test Execution Demo
+✅ Headed and headless execution recorded (upload video in repo or share via link).
 
-📄 Test Reports
-After test execution, an Extent Report will be generated inside /test-output/ExtentReport.html.
-You can open it in a browser to view full detailed test results.
+📌 Notes
+No public APIs were available, so tests were fully automated at the UI level.
 
-📌 Prerequisites
-JDK 17 or later
+Designed using Page Object Model, modular utilities, and proper reporting integrations.
 
-Maven
-
-Git
-
-Stable Internet connection
-
-🙌 Acknowledgements
-SauceDemo Website
-
-Playwright for Java
-
-TestNG
-
-ExtentReports
-
-🚀 Happy Testing!
+👨‍💻 Author
+Rohit Mishra
+📧  mrohit499@gmail.com
