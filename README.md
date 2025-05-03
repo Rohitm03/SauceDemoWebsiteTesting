@@ -29,6 +29,7 @@ SAUCEDEMOWEBTESTING-MAIN/ │ ├── .idea/ # IDE config ├── .vscode/ #
 
 ## 🛠️ Prerequisites
 
+- Windows system
 - Java 17+
 - Maven 3.6+
 - Node.js (for Playwright CLI, optional)
@@ -40,7 +41,7 @@ SAUCEDEMOWEBTESTING-MAIN/ │ ├── .idea/ # IDE config ├── .vscode/ #
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/saucedemowebsitetesting.git
+git clone https://github.com/Rohitm03-/saucedemowebsitetesting.git
 cd saucedemowebsitetesting
 
 # Install dependencies
@@ -59,10 +60,49 @@ mvn test
 ✅ Headed
 https://drive.google.com/file/d/163Trrsf3pwomNJb5u1sSlpvHF9Q9zbs8/view?usp=sharing
 
+
+
 📌 Notes
 No public APIs were available, so tests were fully automated at the UI level.
+Run on windows machine only.
+
 
 Designed using Page Object Model, modular utilities, and proper reporting integrations.
+
+🔮 Future Improvements
+Here are planned enhancements to improve automation scalability, maintainability, and CI/CD integration:
+
+🔁 Cucumber BDD Integration
+Refactor the current TestNG-based suite into Cucumber BDD format.
+
+Define human-readable Gherkin feature files for better collaboration with non-technical stakeholders.
+
+Maintain separation of concerns with:
+
+Step definitions
+
+Hooks
+
+Feature files
+
+Page objects
+
+🚀 CI/CD Integration with Jenkins
+Integrate this test suite with Jenkins to support:
+
+Automated nightly builds and test runs
+
+Triggered executions on GitHub pushes or pull requests
+
+Archiving reports and screenshots post-run
+
+Enable parameterized jobs to run tests across:
+
+Headless/headed modes
+
+Different environments (e.g., staging, production)
+
+Cross-browser setups
 
 👨‍💻 Author
 Rohit Mishra
