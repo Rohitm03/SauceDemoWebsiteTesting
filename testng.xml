@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test name="SauceDemoWebsiteTests">
         <classes>
-            <class name="loginTest" />
+            <class name="SauceDemoTest" />
         </classes>
     </test>
 </suite>

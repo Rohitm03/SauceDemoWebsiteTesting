@@ -1,0 +1,6 @@
+webpages\CartPage.class
+webpages\CheckoutPage.class
+utilities\ScreenshotUtility.class
+webpages\InventoryPage.class
+webpages\LoginPage.class
+utilities\ExtentReportManager.class

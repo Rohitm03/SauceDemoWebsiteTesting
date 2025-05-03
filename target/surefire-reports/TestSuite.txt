@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 25.754 s <<< FAILURE! - in TestSuite
+SauceDemoTest.verifyPricesSortedHighToLow  Time elapsed: 0.323 s  <<< FAILURE!
+java.lang.AssertionError: Prices are NOT sorted from High to Low! expected [true] but found [false]
+	at SauceDemoTest.verifyPricesSortedHighToLow(SauceDemoTest.java:92)
+
