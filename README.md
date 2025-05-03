@@ -36,7 +36,7 @@ SAUCEDEMOWEBTESTING-MAIN/ │ ├── .idea/ # IDE config ├── .vscode/ #
 
 ---
 
-## 🚀 How to Run the Tests
+## 🚀 How to Run the Tests on Windows Machine
 
 ```bash
 # Clone the repo
