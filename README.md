@@ -56,7 +56,8 @@ mvn test
 📸 Failure Screenshots: target/test-output/images/*.png
 
 🎥 Test Execution Demo
-✅ Headed and headless execution recorded (upload video in repo or share via link).
+✅ Headed
+https://drive.google.com/file/d/163Trrsf3pwomNJb5u1sSlpvHF9Q9zbs8/view?usp=sharing
 
 📌 Notes
 No public APIs were available, so tests were fully automated at the UI level.
